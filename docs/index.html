@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lazos de Poder</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/de6c1a1274.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg ">
+      <a class="navbar-brand pos-log" href="#"><img class="logo_LDP big-logo" src="./logos_LDP/logo_LDP_navbar.png"
+          alt="Logo Lazos de poder"></a>
+      <div class="pos-button">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="container-fluid">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#start">
+                  Inicio
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">
+                  Nosotros
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Testimonios
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Donación
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Ubicación
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="main-container" id="start">
+    <div class="logo-container">
+      <figure class="container-main-img">
+        <img src="./img/hero_img.png" alt="Logo 15 Aniversario">
+      </figure>
+    </div>
+    <div class="slogan">
+      <p class="txt-slogan">Transformando Vidas, Construyendo Futuro</p>
+    </div>
+    <div class="scroll-down">
+      <a href="#first-sec" class="scroll-link">
+        <span class="fa-solid fa-chevron-down"></span>
+      </a>
+    </div>
+    <div class="vector-main">
+      <span class="trg-clip bg-trg"></span>
+    </div>
+  </section>
+
+  <section class="sec-coun" id="first-sec">
+    <div class="container-logs">
+      <img src="./logos_LDP/logo_donaciones_lazos_de_poder.png" alt="">
+      <img src="./logos_LDP/logo_voluntariado_lazos_de_poder.png" alt="">
+      <img class="siz-log-fun" src="./logos_LDP/logo_var_LDP.png" alt="">
+    </div>
+    <div class="container-count">
+      <span class="counter" data-target="1000000">0</span>
+      <p class="counter-text">De personas beneficiadas gracias a tu apoyo y a Lazos de Poder.</p>
+    </div>
+  </section>
+
+  <section class="about-us">
+
+  </section>
+
+  <script src="./js/animation-navbar.js"></script>
+  <script src="./js/animation-button.js"></script>
+  <script src="./js/countdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  
+</body>
+
+</html>

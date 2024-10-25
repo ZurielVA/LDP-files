@@ -1,0 +1,266 @@
+html {
+    scroll-behavior:smooth; 
+}
+
+/* navbar */
+.logo_LDP{
+    width: 210px;
+    max-width: 100%;
+    filter: drop-shadow(0 0 8px rgba(0,0,0, .2));
+}
+
+.pos-log{
+    padding-left: 8%;
+}
+
+.navbar-nav{
+    padding-right: 6%;
+}
+
+.navbar{
+    padding: 4px 10px!important;
+    background-color: #FFFFFF!important;
+    --bs-navbar-nav-link-padding-x: 0.8rem!important;
+    position: fixed!important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 50;
+    width: 100%;
+}
+
+.nav-item a{
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: black!important;
+    font-size: 18px;
+    text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-toggler {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.navbar-toggler-icon{
+    font-size: 1.2em;
+}
+
+/* tablets */
+@media (max-width: 992px) {
+    .pos-log{
+        padding-left: 6%;
+    }
+    .pos-button{
+        padding-right: 6%;
+    }
+}  
+
+
+/* phones */
+@media (max-width: 500px) {
+    .logo_LDP{
+        width: 150px;
+    }
+    .pos-log{
+        padding-left: 5px;
+    }
+    .pos-button{
+        padding-right: 5px;
+    }
+    .navbar{
+        padding: 6px 10px!important;
+    }
+}
+
+/* end-navbar */
+
+/* main */
+.main-container {
+    background: linear-gradient(to right, #000000, #414141);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;         
+    justify-content: center;         
+    align-items: center;             
+    position: relative;
+    padding-top: 40px;
+}
+
+.bg-trg{
+    background-color: #110f0f;
+}
+
+.trg-clip{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    clip-path: polygon(0 5%, 0 100%, 100% 100%, 100% 5%, 50% 90%);
+}
+
+.trg-clip {
+    bottom: -1px;
+}
+
+.logo-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0; 
+    max-width: 380px;
+}
+
+.container-main-img {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.logo-container img {
+  width: 100%;
+  height: auto;
+}
+
+.slogan {
+  font-family: "Comfortaa", sans-serif;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.scroll-down {
+  display: flex;
+  justify-content: center;
+  padding-top: 14px;
+}
+
+.scroll-down span{
+    position: relative;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.8rem;
+    background-color: #ffffff;
+    width: 3rem;
+    height: 3rem;
+    padding: 20%;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.scroll-down:hover span {
+    background-color: gray;
+}
+
+@media (max-width:810px) {
+    .trg-clip{
+        height: 170px;
+    }
+}
+
+@media (max-width:760px) {
+    .logo-container{
+        width: 300px;
+    }
+    .slogan{
+        font-size: 18px;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 374px) {
+    .trg-clip{
+        height: 220px;
+    }
+}
+
+/* End main */
+
+
+/* sec-coun */
+.sec-coun {
+    width: 100%;
+    height: 100vh;
+    background-color: #110f0f;
+    display: flex; /* Usar flexbox para centrar */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    flex-direction: column; /* Colocar elementos en columna */
+}
+
+.container-logs {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    padding: 60px 10px 60px;
+    flex-wrap: wrap;
+}
+
+.container-logs img {
+    max-width: 100%;
+    width: 180px;
+    margin: 30px 80px;
+}
+
+.siz-log-fun {
+    width: 130px !important;
+}
+
+.container-count {
+    text-align: center;
+    padding: 20px;
+    max-width: 100%;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.counter {
+    color: #F5A624;
+    display: block;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 64px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.counter-text {
+    color: #FFFFFF;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 24px;
+}
+
+@media (max-width:991px) {
+    .container-logs{
+        padding: 0;
+    }
+}
+
+@media (max-width:630px) {
+    .sec-coun{
+        height: 100%;
+    }
+}
+
+@media (max-width:430px) {
+    .counter{
+        font-size: 50px;
+    }
+    .counter-text{
+        font-size: 18px;
+    }
+}
+
+.about-us{
+    height: 100vh;
+    background: linear-gradient(to right, #000000, #414141);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
