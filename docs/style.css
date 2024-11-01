@@ -57,12 +57,15 @@ p{
     .pos-button{
         padding-right: 6%;
     }
+    .logo_LDP{
+        width: 150px;
+    }
 }  
 
 /* phones */
 @media (max-width: 500px) {
     .logo_LDP{
-        width: 150px;
+        width: 140px;
     }
     .pos-log{
         padding-left: 5px;
@@ -164,8 +167,8 @@ p{
 @media (max-width:991px) {
     .main-container{
         height: 100%;
-        padding-top: 150px;
-        padding-bottom: 100px;
+        padding-top: 160px;
+        padding-bottom: 150px;
     }
 }
 
