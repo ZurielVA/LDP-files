@@ -8,21 +8,17 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetElement = document.querySelector(targetId);
 
             if (targetElement) {
-                
-                if (window.innerWidth > 991) {
-                    smoothScrollTo(targetElement);
-                } else {
-                    targetElement.scrollIntoView({ behavior: 'smooth' });
-                }
+                // Usar scrollIntoView con comportamiento suave para todos los dispositivos
+                smoothScrollTo(targetElement, 1000); // Ajusta el tiempo según necesites
             }
         });
     });
 
-    const smoothScrollTo = (targetElement) => {
+    // Función de desplazamiento suave
+    const smoothScrollTo = (targetElement, duration) => {
         const startPosition = window.scrollY;
         const targetPosition = targetElement.getBoundingClientRect().top + startPosition;
         const distance = targetPosition - startPosition;
-        const duration = 1000;
         let startTime = null;
 
         const animation = (currentTime) => {

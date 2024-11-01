@@ -1,5 +1,5 @@
-html {
-    scroll-behavior:smooth; 
+p{
+    margin: 0!important;
 }
 
 /* navbar */
@@ -134,6 +134,7 @@ html {
   font-style: italic;
   font-size: 1.5rem;
   color: #ffffff;
+  margin-bottom: 18px;
 }
 
 .scroll-down {
@@ -244,6 +245,7 @@ html {
     color: #FFFFFF;
     font-family: 'Comfortaa', sans-serif;
     font-size: 24px;
+    margin-top: 10px!important;
 }
 
 @media (max-width:649px) {
@@ -348,6 +350,25 @@ html {
     background-size: cover;
 }
 
+@media (max-width: 1200px) and (min-width: 992px) {
+    .container-text-section{
+        margin-left: 30px;
+        padding: 0;
+    }
+    .p-txt-sec{
+        padding-bottom: 5px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .title-txt-sec{
+        font-size: 40px;
+    }
+    .p-txt-sec{
+        font-size: 16px;
+    }
+}
+
 @media (max-width:991px) {
     .img-section{
         border-radius: 15px;
@@ -364,11 +385,5 @@ html {
 @media (max-width:575px) {
     .container-text-section{
         padding: 10px 18px;
-    }
-    .title-txt-sec{
-        font-size: 40px;
-    }
-    .p-txt-sec{
-        font-size: 16px;
     }
 }
