@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const scrollLinks = document.querySelectorAll('.navbar-nav .nav-link, .scroll-link');
+    const scrollLinks = document.querySelectorAll('.navbar-nav .nav-link, .scroll-link, .navbar-brand,.pos-log');
 
     scrollLinks.forEach(scrollLink => {
         scrollLink.addEventListener('click', (event) => {
@@ -8,17 +8,21 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetElement = document.querySelector(targetId);
 
             if (targetElement) {
-                // Usar scrollIntoView con comportamiento suave para todos los dispositivos
-                smoothScrollTo(targetElement, 1000); // Ajusta el tiempo según necesites
+                
+                if (window.innerWidth > 1400) {
+                    smoothScrollTo(targetElement);
+                } else {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
             }
         });
     });
 
-    // Función de desplazamiento suave
-    const smoothScrollTo = (targetElement, duration) => {
+    const smoothScrollTo = (targetElement) => {
         const startPosition = window.scrollY;
         const targetPosition = targetElement.getBoundingClientRect().top + startPosition;
         const distance = targetPosition - startPosition;
+        const duration = 1000;
         let startTime = null;
 
         const animation = (currentTime) => {

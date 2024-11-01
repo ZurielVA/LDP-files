@@ -161,6 +161,14 @@ p{
     background-color: gray;
 }
 
+@media (max-width:991px) {
+    .main-container{
+        height: 100%;
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+}
+
 @media (max-width:810px) {
     .trg-clip{
         height: 170px;
