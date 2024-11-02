@@ -14,50 +14,29 @@
 </head>
 
 <body>
-  
+
   <header>
-    <nav class="navbar navbar-expand-lg ">
-      <a class="navbar-brand pos-log" href="#start"><img class="logo_LDP big-logo" src="./logos_LDP/logo_LDP_navbar.png"
-          alt="Logo Lazos de poder"></a>
-      <div class="pos-button">
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand pos-log" href="#start">
+        <img class="logo_LDP big-logo" src="./logos_LDP/logo_LDP_navbar.png" alt="Logo Lazos de poder">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="container-fluid">
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas offcanvas-end" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#start">
-                  Inicio
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#">
-                  Nosotros
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Testimonios
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Donación
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Ubicación
-                </a>
-              </li>
+              <li class="nav-item"><a class="nav-link active" href="#start">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Testimonios</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Donación</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Ubicación</a></li>
             </ul>
           </div>
         </div>
@@ -65,15 +44,16 @@
     </nav>
   </header>
 
-  <div class="preloader"></div>
+  <div class="preloader">
+  </div>
+
   <section class="main-container" id="start">
     <div class="logo-container">
-      <figure data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="container-main-img">
-        <img src="./img/hero_img.png" alt="Logo 15 Aniversario">
+      <figure class="container-main-img">
+        <img src="./img/hero_img.png" alt="Logo Quinceavo Aniversario">
       </figure>
     </div>
-    <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="1500" data-aos-offset="0"
-      class="slogan">
+    <div class="slogan">
       <p class="txt-slogan">Transformando Vidas, Construyendo Futuro</p>
     </div>
     <div class="scroll-down">
@@ -86,31 +66,31 @@
     </div>
   </section>
 
-
   <section class="sec-coun" id="first-sec">
     <div class="container-logs">
-      <img src="./logos_LDP/logo_donaciones_lazos_de_poder.png" alt="">
-      <img src="./logos_LDP/logo_voluntariado_lazos_de_poder.png" alt="">
-      <img class="siz-log-fun" src="./logos_LDP/logo_var_LDP.png" alt="">
+      <img data-aos="fade-right" data-aos-duration="2000" src="./logos_LDP/logo_donaciones_lazos_de_poder.png" alt="">
+      <img data-aos="fade-left" data-aos-duration="2000" src="./logos_LDP/logo_voluntariado_lazos_de_poder.png" alt="">
+      <img data-aos="fade-right" data-aos-duration="2000" class="siz-log-fun" src="./logos_LDP/logo_var_LDP.png" alt="">
     </div>
     <div class="container-count">
       <span class="counter" data-target="1000000">0</span>
-      <p class="counter-text">De personas beneficiadas gracias a tu apoyo y a Lazos de Poder.</p>
+      <p class="counter-text" data-aos="zoom-in" data-aos-duration="2500">De personas beneficiadas gracias a tu apoyo y
+        a Lazos de Poder.</p>
     </div>
   </section>
 
-  <section class="about-us">
+  <section class="pos-sec">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6">
-          <div data-aos="fade-up" data-aos-duration="2300" data-aos-on-scroll class="container-img">
-            <img class="img-section img-fluid" src="./img/img-1.jpeg" alt="Imagen de Escalada">
+          <div data-aos="fade-up" data-aos-duration="2400" data-aos-on-scroll class="container-img">
+            <img class="img-section img-fluid" src="./img/img-1.jpeg" alt="">
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="container-text-section">
-            <h3 class="title-txt-sec">Título para esta sección</h3>
-            <p class="p-txt-sec">
+          <div class="container-text-section" data-aos="fade-up" data-aos-duration="2400" data-aos-on-scroll>
+            <h3 class="title-txt-sec pos-vec-title fo-title">Título para esta sección</h3>
+            <p class="p-txt-sec fo-p-txt">
               Lorem ipsum dolor sit amet consectetur. Lectus sit viverra tincidunt egestas neque purus turpis.
               Nibh hac aliquam id proin venenatis suspendisse amet hac. Massa enim tempus aliquet leo libero velit.
             </p>
@@ -120,18 +100,20 @@
     </div>
   </section>
 
-  <section class="about-us bg-left">
+
+
+  <section class="pos-sec bg-left">
     <div class="container">
       <div class="row align-items-center flex-lg-row-reverse">
         <div class="col-lg-6">
           <div data-aos="fade-up" data-aos-duration="2400" data-aos-on-scroll class="container-img">
-            <img class="img-section img-fluid" src="./img/img-1.jpeg" alt="Imagen de Escalada">
+            <img class="img-section img-fluid" src="./img/img-1.jpeg" alt="">
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="container-text-section">
-            <h3 class="title-txt-sec">Título para esta sección</h3>
-            <p class="p-txt-sec">
+          <div class="container-text-section" data-aos="fade-up" data-aos-duration="2400" data-aos-on-scroll>
+            <h3 class="title-txt-sec pos-vec-title fo-title">Título para esta sección</h3>
+            <p class="p-txt-sec fo-p-txt">
               Lorem ipsum dolor sit amet consectetur. Lectus sit viverra tincidunt egestas neque purus turpis.
               Nibh hac aliquam id proin venenatis suspendisse amet hac. Massa enim tempus aliquet leo libero velit.
             </p>
@@ -141,8 +123,8 @@
     </div>
   </section>
 
-  <section class="don-part">
-
+  <section class="donations-section">
+    
   </section>
 
 

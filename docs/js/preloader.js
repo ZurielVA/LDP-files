@@ -1,13 +1,16 @@
-const observer = new PerformanceObserver((list) => {
-    const entries = list.getEntries();
-    
-    const criticalResourcesLoaded = entries.every(entry => entry.duration < 3000);
-    
-    if (criticalResourcesLoaded) {
-        document.body.classList.add('loaded');
-        observer.disconnect();
+window.addEventListener('load', () => {
+    const body = document.querySelector('body');
+    const hasVisited = localStorage.getItem('hasVisited');
+
+    if (!hasVisited) {
+        body.classList.add('no-scroll'); 
+
+        setTimeout(() => {
+            body.classList.add('loaded');
+            body.classList.remove('no-scroll'); 
+            localStorage.setItem('hasVisited', 'true');
+        }, 3000); 
+    } else {
+        body.classList.add('loaded');
     }
 });
-
-observer.observe({ entryTypes: ["resource"] });
-
