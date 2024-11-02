@@ -227,9 +227,6 @@ body.no-scroll {
         font-size: 18px;
         padding: 0 10px;
     }
-    /* .main-container{
-        height: 100%;
-    } */
 }
 
 
@@ -304,11 +301,14 @@ body.no-scroll {
     .sec-coun{
         height: 100%;
     }
+    .container-logs{
+        padding: 100px 10px 10px;
+    }
 }
 
 @media (max-width:649px) {
     .container-logs{
-        padding: 5px;
+        padding-top: 80px;
     }
 }
 
@@ -322,6 +322,9 @@ body.no-scroll {
     .container-logs img {
         width: 170px;
         margin: 30px 30px;
+    }
+    .container-logs{
+        padding-top: 80px;
     }
 }
 /* End-sec-coun */
