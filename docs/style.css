@@ -84,7 +84,9 @@ body.no-scroll {
     border: none !important;
     outline: none !important;
     box-shadow: none !important;
+    margin-right: 4%!important;
 }
+
 
 .navbar-toggler-icon{
     font-size: 1.2em;
@@ -116,6 +118,9 @@ body.no-scroll {
     }
     .navbar{
         padding: 6px 10px!important;
+    }
+    .navbar-toggler{
+        margin-right: 0!important;
     }
 }
 /* end-navbar */
