@@ -491,10 +491,139 @@ body.no-scroll {
 
 .donations-section {
     background-color: #EEEEEE;
-    position: relative;
-    height: 100vh;
+    position: relative!important;
+    padding: 90px 0 30px;
 }
 
+/* title sections - s */
+
+.container-title-s{
+    padding: 0 0 20px;
+}
+
+.vec-title{
+  position: relative;
+  display: inline-block;
+  padding: 0 2px;
+}
+
+.vec-title::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    bottom: -10px;
+    width: 4px; 
+    height: 95%;
+    background-color: #000000;
+    border-radius: 15px;
+}
+
+.vec-title::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: -20px;
+    width: 50px;
+    height: 4px;
+    background-color: #060606;
+    border-radius: 15px;
+}
+
+@media (max-width: 1200px){
+    .vec-title{
+        font-size: 40px;
+    }
+}
+
+@media (max-width:551px) {
+    .vec-title::before{
+        height: 40%;
+    }
+    .container-title-s{
+        margin-left: 20px;
+    }
+}
+
+/* end title - s */
+
+/* cards */
+
+.container-cards{
+    padding: 10px 0 10px;
+}
+
+.custom-card {
+    background-color: #ffffff;
+    border-radius: 45px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+}
+
+.custom-card-img {
+  width: 200px!important;
+  height: auto;
+  margin: 0 auto 15px;
+  display: block;
+}
+
+.custom-card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.container-txt-card{
+    padding: 10px 0 10px;
+}
+
+.custom-card-text {
+  font-size: 14px;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.container-button{
+  padding: 15px 0 0;
+}
+
+.custom-btn {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #007bff; 
+  color: #ffffff;
+  padding: 16px 40px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.custom-btn:hover {
+  background-color: #0056b3;
+  color: #ffffff;
+}
+
+/* end card */
+/* end donations-section */
 
 
 
+/* sec-test */
+
+.bg-title{
+    color: #F5A624;
+}
+
+#bg-vec::before{
+    background-color: #EEEEEE;
+    height: 95%;
+}
+
+#bg-vec::after{
+    background-color: #EEEEEE;
+}

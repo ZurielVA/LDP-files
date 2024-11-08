@@ -18,6 +18,9 @@
 
 <body>
 
+  <div class="preloader">
+  </div>
+
   <header>
     <nav class="navbar navbar-expand-lg">
       <a class="navbar-brand pos-log" href="#start">
@@ -47,8 +50,7 @@
     </nav>
   </header>
 
-  <div class="preloader">
-  </div>
+  
 
   <section class="main-container" id="start">
     <div class="logo-container">
@@ -82,7 +84,7 @@
     </div>
   </section>
 
-  <section class="pos-sec">
+  <section class="pos-sec sec-two">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6">
@@ -127,14 +129,69 @@
   </section>
 
   <section class="donations-section">
+    <div class="container-title-s">
+      <div class="container-fluid d-flex justify-content-center align-items-center position-relative">
+        <div class="conf-title" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-on-scroll>
+          <h3 class="fo-title vec-title">Título para esta sección</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-4 container-cards">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-6 col-md-auto mb-4 d-flex justify-content-center">
+          <div class="custom-card" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-on-scroll>
+            <img src="./logos_LDP/logo_donaciones_lazos_de_poder.png" alt="Donaciones" class="custom-card-img">
+            <div class="custom-card-body">
+              <div class="container-txt-card">
+                <p class="custom-card-text">Lorem ipsum dolor sit amet consectetur. Lectus sit viverra tincidunt egestas
+                  neque purus turpis.</p>
+              </div>
+              <div class="container-button">
+                <a href="#" class="custom-btn">Dona ahora</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-auto mb-4 d-flex justify-content-center">
+          <div class="custom-card" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-on-scroll>
+            <img src="./logos_LDP/logo_voluntariado_lazos_de_poder.png" alt="Donaciones" class="custom-card-img">
+            <div class="custom-card-body">
+              <div class="container-txt-card">
+                <p class="custom-card-text">Lorem ipsum dolor sit amet consectetur. Lectus sit viverra tincidunt egestas
+                  neque purus turpis.</p>
+              </div>
+              <div class="container-button">
+                <a href="#" class="custom-btn">Más información</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pos-sec sec-test">
+    <div class="container-title-s">
+      <div class="container-fluid d-flex justify-content-center align-items-center position-relative">
+        <div class="conf-title">
+          <h3 class="fo-title vec-title bg-title" id="bg-vec">Testimonios</h3>
+        </div>
+      </div>
+    </div>
+
     
   </section>
+
 
 
   <script src="./js/preloader.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      once: true
+    });
   </script>
   <script src="./js/animation-button.js"></script>
   <script src="./js/countdown.js"></script>

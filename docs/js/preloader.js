@@ -9,7 +9,7 @@ window.addEventListener('load', () => {
             body.classList.add('loaded');
             body.classList.remove('no-scroll'); 
             localStorage.setItem('hasVisited', 'true');
-        }, 3000); 
+        }, 2000); 
     } else {
         body.classList.add('loaded');
     }
