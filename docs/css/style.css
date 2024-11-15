@@ -383,7 +383,7 @@ body.no-scroll {
 }
 
 .container-img {
-    background-image: url('/img/img-1.jpeg');
+    background-image: url('./img/img-1.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
