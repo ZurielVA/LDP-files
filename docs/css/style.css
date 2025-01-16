@@ -754,8 +754,23 @@ html{
 }
 
 @media (max-width: 1070px) {
+    .container-carousel-vid{
+        padding-bottom: 130px;
+    }
     .carousel-control-prev, .carousel-control-next{
-        top: 105%;
+        top: 108%;
+    }
+    .carousel-indicators{
+        bottom: -85px;
+    }
+}
+
+@media (max-width: 500px) {
+    .carousel-control-prev, .carousel-control-next{
+        top: 120%;
+    }
+    .carousel-indicators{
+        bottom: -95px;
     }
 }
 
