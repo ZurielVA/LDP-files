@@ -15,22 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    videos.forEach((video, index) => {
-        video.addEventListener('ended', () => {
-            const nextSlide = video.closest('.carousel-item').nextElementSibling;
-            if (nextSlide) {
-                const nextVideo = nextSlide.querySelector('video');
-                if (nextVideo) {
-                    setTimeout(() => {
-                        nextSlide.classList.add('active');
-                        nextVideo.play();
-                        updateActiveIndicator(index + 1); 
-                    }, 1000); 
-                }
-            }
-        });
-    });
-
     carousel.addEventListener('slid.bs.carousel', () => {
         videos.forEach((video) => video.pause());
         
@@ -43,21 +27,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     indicators.forEach((indicator, index) => {
         indicator.addEventListener('click', (e) => {
-            carousel.querySelector('.carousel-item.active').classList.remove('active');
+            carousel.querySelector('.carousel-item.active').classList.remove('active'); 
             const targetSlide = carousel.querySelector(`.carousel-item:nth-child(${index + 1})`);
-            targetSlide.classList.add('active'); 
-            updateActiveIndicator(index); 
+            targetSlide.classList.add('active');
+            updateActiveIndicator(index);
 
             videos.forEach((video) => video.pause());
             const activeVideo = targetSlide.querySelector('video');
             if (activeVideo) {
-                activeVideo.currentTime = 0;
-                activeVideo.play();
+                activeVideo.currentTime = 0; 
+                activeVideo.play(); 
             }
         });
     });
 
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 768) { 
         document.addEventListener('visibilitychange', () => {
             if (document.hidden) {
                 videos.forEach((video) => video.pause());
@@ -65,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    const observer = new IntersectionObserver((entries, observer) => {
+    const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             const video = entry.target.querySelector('video');
             if (video) {
