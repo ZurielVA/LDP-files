@@ -740,10 +740,11 @@ html{
 .video-container{
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .video-container-element{
-    max-width: 950px;
+    max-width: 900px;
     object-fit: contain;
     border-radius: 15px; 
     overflow: hidden;
