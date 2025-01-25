@@ -21,32 +21,42 @@
   <div class="preloader"></div>
 
   <header>
-    <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand pos-log" href="#start">
-        <img class="logo_LDP big-logo" src="./logos_LDP/logo_LDP_navbar.png" alt="Logo Lazos de poder">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="container-fluid">
-        <div class="offcanvas offcanvas-end" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1">
-              <li class="nav-item"><a class="nav-link active" href="#start">Inicio</a></li>
-              <li class="nav-item"><a class="nav-link" href="#first-sec">Nosotros</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Testimonios</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Donación</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Ubicación</a></li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand pos-log" href="#start">
+          <img class="logo_LDP" src="/logos_LDP/logo_LDP_navbar.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+          aria-controls="offcanvasMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#start">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#first-sec">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Testimonios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Donación</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Ubicación</a></li>
+          </ul>
         </div>
       </div>
     </nav>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+      <div class="offcanvas-header">
+        <h5 id="offcanvasMenuLabel">MENÚ</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body bg-trg">
+        <ul class="navbar-nav nav-icons">
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-house"></i>Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-users"></i>Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-comment"></i>Testimonios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-hand-holding-dollar"></i>Donación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-phone"></i>Contáctanos</a></li>
+        </ul>
+      </div>
+    </div>
   </header>
 
   <main>
@@ -70,7 +80,8 @@
         <img class="siz-log-fun" src="./logos_LDP/logo_var_LDP.png" alt="">
       </div>
       <div class="container-model">
-        <h1 class="fo-title bg-title conf--title" data-aos="fade-up" data-aos-duration="2400" data-aos-on-scroll>Modelo de intervención</h1>
+        <h1 class="fo-title bg-title conf--title" data-aos="fade-up" data-aos-duration="2400" data-aos-on-scroll>Modelo
+          de intervención</h1>
         <div class="container model-mar">
           <div class="row text-center">
             <!-- Columna 1 -->
@@ -220,7 +231,8 @@
       <section class="container-title-s">
         <div class="container-fluid d-flex justify-content-center align-items-center position-relative">
           <div class="conf-title">
-            <h3 class="fo-title vec-title bg-title bg-vec" data-aos="fade-up" data-aos-duration="1000" data-aos-on-scroll>Testimonios</h3>
+            <h3 class="fo-title vec-title bg-title bg-vec" data-aos="fade-up" data-aos-duration="1000"
+              data-aos-on-scroll>Testimonios</h3>
           </div>
         </div>
       </section>
@@ -233,7 +245,8 @@
             <button type="button" data-bs-target="#carousel-test" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carousel-test" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-          <div class="carousel-inner container-carousel-inner" data-aos="zoom-in-up" data-aos-duration="1500" data-aos-on-scroll>
+          <div class="carousel-inner container-carousel-inner" data-aos="zoom-in-up" data-aos-duration="1500"
+            data-aos-on-scroll>
             <div class="carousel-item active">
               <div class="video-container">
                 <video class="video-container-element" controls controlsList="nodownload">
@@ -273,7 +286,8 @@
       <section class="container-title-s">
         <div class="container-fluid d-flex justify-content-center align-items-center position-relative">
           <div class="conf-title">
-            <h3 class="fo-title vec-title  bg-title bg-vec bg-vec--config" data-aos="fade-up" data-aos-duration="2400" data-aos-on-scroll>Nos ubicamos en:</h3>
+            <h3 class="fo-title vec-title  bg-title bg-vec bg-vec--config" data-aos="fade-up" data-aos-duration="2400"
+              data-aos-on-scroll>Nos ubicamos en:</h3>
           </div>
         </div>
       </section>

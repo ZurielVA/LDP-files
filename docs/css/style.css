@@ -62,60 +62,74 @@ html{
 
 /* navbar */
 .logo_LDP{
-    width: 210px;
+    width: 170px;
     max-width: 100%;
-    filter: drop-shadow(0 0 8px rgba(0,0,0, .2));
-}
-
-.pos-log{
-    padding-left: 8%;
-}
-
-.navbar-nav{
-    padding-right: 6%;
+    filter: drop-shadow(0 0 8px rgba(0,0,0, .5));
 }
 
 .navbar{
-    padding: 4px 10px!important;
-    background-color: var(--white)!important;
-    --bs-navbar-nav-link-padding-x: 0.8rem!important;
+    padding: 4px 10px;
+    background-color: var(--white);
+    --bs-navbar-nav-link-padding-x: 0.8rem;
     position: fixed!important;
     top: 0;
     right: 0;
     left: 0;
-    z-index: 50;
+    z-index: 1030;
     width: 100%;
 }
 
 .nav-item a{
     font-family: var(--font_txt);
-    font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
-    color: var(--black)!important;
+    color: var(--black);
     font-size: 18px;
-    text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
 }
 
 .navbar-toggler {
     border: none !important;
     outline: none !important;
     box-shadow: none !important;
-    margin-right: 4%!important;
+}
+
+.btn-close{
+    box-shadow: none !important;
 }
 
 .navbar-toggler-icon{
     font-size: 1.2em;
 }
 
+.h5, h5{
+    font-size: 26px;
+}
+
+.nav-icons a{
+    color: var(--white);
+}
+
+.nav-icons li{
+    padding-bottom: 30px;
+}
+
+.nav-icons i{
+    margin-right: 14px;
+    font-size: 22px;
+}
+
+.offcanvas-body{
+    border: 1px solid var(--white);
+}
+
+.offcanvas-body .nav-link{
+    border-bottom: 2px solid var(--white);
+    padding: 10px;
+    margin: 2px;
+}
+
 /* tablets */
 @media (max-width: 992px) {
-    .pos-log{
-        padding-left: 6%;
-    }
-    .pos-button{
-        padding-right: 6%;
-    }
     .logo_LDP{
         width: 150px;
     }
@@ -125,18 +139,6 @@ html{
 @media (max-width: 500px) {
     .logo_LDP{
         width: 140px;
-    }
-    .pos-log{
-        padding-left: 5px;
-    }
-    .pos-button{
-        padding-right: 5px;
-    }
-    .navbar{
-        padding: 6px 10px!important;
-    }
-    .navbar-toggler{
-        margin-right: 0!important;
     }
 }
 /* end-navbar */
